@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}" type="text/css" />
+    <link rel="stylesheet" th:href="@{/assets/css/font-awesome.min.css}" type="text/css" />
+    <link rel="stylesheet" th:href="@{/assets/css/elegant-icons.css}" type="text/css" />
+    <link rel="stylesheet" th:href="@{/assets/css/plyr.css}" type="text/css" />
+    <link rel="stylesheet" th:href="@{/assets/css/nice-select.css}" type="text/css" />
+    <link rel="stylesheet" th:href="@{/assets/css/owl.carousel.min.css}" type="text/css" />
+    <link rel="stylesheet" th:href="@{/assets/css/slicknav.min.css}" type="text/css" />
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}" type="text/css" />
+
+    <th:block layout:fragment="css"></th:block>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!-- header -->
+    <header th:replace="~{fragments/header::header}"></header>
+
+    <!-- content -->
+    <div layout:fragment="content"></div>
+
+    <!-- footer -->
+    <footer th:replace="~{fragments/footer::footer}"></footer>
+
+    <!-- Js Plugins -->
+    <script th:src="@{/assets/js/jquery-3.3.1.min.js}"></script>
+    <script th:src="@{/assets/js/bootstrap.min.js}"></script>
+    <script th:src="@{/assets/js/player.js}"></script>
+    <script th:src="@{/assets/js/jquery.nice-select.min.js}"></script>
+    <script th:src="@{/assets/js/mixitup.min.js}"></script>
+    <script th:src="@{/assets/js/jquery.slicknav.js}"></script>
+    <script th:src="@{/assets/js/owl.carousel.min.js}"></script>
+    <script th:src="@{/assets/js/main.js}"></script>
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <th:block layout:fragment="script"></th:block>
+  </body>
+</html>
